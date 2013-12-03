@@ -28,24 +28,66 @@
         </ul>
       </header>
       <section>
-        <p>Include <code>forcem.js</code> towards the end of the body tag.</p>
+        <p><a href="#setup">Setup</a> 
+<a href="#options">Options</a> 
+<a href="#usage">Usage</a> 
+<a href="#example">Example Code</a> </p>
 
-<p>The basic set up defaults to <code>.forcem</code>using episode 4 and planets in lists</p>
+<hr><p><a name="setup"></a></p>
+
+<h1>
+<a name="setup" class="anchor" href="#setup"><span class="octicon octicon-link"></span></a>Setup</h1>
+
+<p>Include <code>forcem.js</code> towards the end of the body tag.</p>
+
+<h3>
+<a name="basic" class="anchor" href="#basic"><span class="octicon octicon-link"></span></a>Basic</h3>
 
 <pre><code>forcem();
 </code></pre>
 
-<p>Heres and example of an advanced set up</p>
+<h3>
+<a name="advanced" class="anchor" href="#advanced"><span class="octicon octicon-link"></span></a>Advanced</h3>
 
 <pre><code>forcem({
-    class: forcem,
-    episode: 4, //Allowed 4 - 6
-    list: 'characters' //Allowed 'characters', 'planets'
+    class: 'forcem',
+    episode: 4,
+    list: 'characters'
 });
 </code></pre>
 
-<h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+<p><a name="options"></a></p>
+
+<h1>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h1>
+
+<table>
+<thead><tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>class</td>
+<td>Main class for forcem elements</td>
+<td>'forcem'</td>
+</tr>
+<tr>
+<td>episode</td>
+<td>Star Wars epsidode #, episodes 4 - 6</td>
+<td>4</td>
+</tr>
+<tr>
+<td>list</td>
+<td>List type: 'characters' or 'planets'</td>
+<td>'planets'</td>
+</tr>
+</tbody>
+</table><p><a name="usage"></a></p>
+
+<h1>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
 
 <p>Set elements class to <code>forcem</code>. Use class <code>p-#</code> for paragraphs or <code>li-#</code> for lists where # is the number of paragraphs or list items you want displayed.</p>
 
@@ -69,8 +111,10 @@
 <pre><code>&lt;img class="forcem w-200 h-100"/&gt;
 </code></pre>
 
-<h2>
-<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
+<p><a name="example"></a></p>
+
+<h1>
+<a name="example-code" class="anchor" href="#example-code"><span class="octicon octicon-link"></span></a>Example Code</h1>
 
 <pre><code>&lt;html&gt;
 &lt;head&gt;
