@@ -56,6 +56,8 @@
 		if ( id == 'deathstar' ) {
 			id = 'planets';
 		} 
+		//Analytics
+		ga('send', 'event', "Navigation", "Click", "Option", id);
 		var newConfig = { option: id, limit: config.limit, copy: config.copy};
 		setCookie('forcem', JSON.stringify(newConfig), 30);
 		config = JSON.parse(getCookie('forcem'));
@@ -78,7 +80,7 @@
 		var newConfig = { option: config.option, limit: this.value, copy: config.copy};
 		setCookie('forcem', JSON.stringify(newConfig), 30);
 		config = JSON.parse(getCookie('forcem'));
-		generate(config.option, config.limit);	
+		generate(config.option, config.limit);
 	});
 	//Toggle Copy Type
 	document.getElementById('toggle-plain').addEventListener('click', function() {

@@ -9,7 +9,16 @@
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		<link rel="icon" href="apple-touch-icon.png">
 		<link rel="stylesheet" href="styles/main.css">
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+		  ga('create', 'UA-2587159-21', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
 	</head>
 	<body>
 		<nav class="noselect">
@@ -20,9 +29,9 @@
 				<li role="presentation" class="toggle-option" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Characters"><a href="#"><div id="characters" class="sprite icon pop"></div></a></li>
 				<li role="presentation" class="toggle-option" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Places"><a href="#"><div id="places" class="sprite icon pop"></div></a></li>
 				<li role="presentation" data-container="body" data-toggle="popover" data-placement="bottom" data-content="How many?"><span><input id="limit" type="number" class='pop'/></span></li>
-				<li role="presentation" class="pull-right hidden-sm hidden-xs" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Copy"><a href="#"><div id="copy" class="sprite icon pop"></div></a></li>
-				<li role="presentation" id="toggle-plain" class="pull-right"><a href="#" class="hidden-sm hidden-xs">Plain Text</a></li>
-				<li role="presentation" id="toggle-html" class="pull-right"><a href="#" class="hidden-sm hidden-xs">HTML</a></li>	
+				<li role="presentation" class="pull-right hidden-sm hidden-xs hide" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Copy"><a href="#"><div id="copy" class="sprite icon pop"></div></a></li>
+				<li role="presentation" id="toggle-plain" class="pull-right hide"><a href="#" class="hidden-sm hide hidden-xs">Plain Text</a></li>
+				<li role="presentation" id="toggle-html" class="pull-right hide"><a href="#" class="hidden-sm hide hidden-xs">HTML</a></li>	
 			</ul>
 		</nav>
     
