@@ -89,6 +89,8 @@
 		var newConfig = { option: config.option, limit: config.limit, copy: "plain"};
 		setCookie('forcem', JSON.stringify(newConfig), 30);
 		config = JSON.parse(getCookie('forcem'));
+		copyTmp = document.getElementById("ipsum").innerHTML;
+		copyTmp = copyTmp.replace(/<[^>]*>/g, "\n");
 	});
 	document.getElementById('toggle-html').addEventListener('click', function() {
 		document.getElementById('toggle-plain').className = "pull-right";
@@ -96,6 +98,7 @@
 		var newConfig = { option: config.option, limit: config.limit, copy: "html"};
 		setCookie('forcem', JSON.stringify(newConfig), 30);
 		config = JSON.parse(getCookie('forcem'));
+		copyTmp = document.getElementById("ipsum").innerHTML;
 	});
 	//Cookies
 	function setCookie(cname, cvalue, exdays) {
