@@ -1,177 +1,55 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>ForcemJS by scottyg</title>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Forcem Ipsum</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>ForcemJS</h1>
-        <p>a toolkit for HTML and Photoshop</p>
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="icon" href="apple-touch-icon.png">
+		<link rel="stylesheet" href="styles/main.css">
+		
 
-        <p class="view"><a href="https://github.com/scottyg/ForcemJS">View the Project on GitHub <small>scottyg/ForcemJS</small></a></p>
+		<script src="bower_components/modernizr/modernizr.js"></script>
+		<script src="node_modules/forcem-ipsum/forcem.js"></script>
 
-
-        <ul>
-          <li><a href="https://github.com/scottyg/ForcemJS/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/scottyg/ForcemJS/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/scottyg/ForcemJS">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <p><a href="#setup">Setup</a> |
-<a href="#options">Options</a> |
-<a href="#usage">Usage</a> |
-<a href="#example">Example</a></p>
-
-<hr><p>Check out <a href="http://forcemipsum.com">Forcem Ipsum</a>
-<a name="setup"></a></p>
-
-<h1>
-<a name="setup" class="anchor" href="#setup"><span class="octicon octicon-link"></span></a>Setup</h1>
-
-<h2>
-<a name="html" class="anchor" href="#html"><span class="octicon octicon-link"></span></a>HTML</h2>
-
-<p>Include <code>forcem.js</code> towards the end of the body tag.</p>
-
-<h3>
-<a name="basic" class="anchor" href="#basic"><span class="octicon octicon-link"></span></a>Basic</h3>
-
-<pre><code>forcem();
-</code></pre>
-
-<h3>
-<a name="advanced" class="anchor" href="#advanced"><span class="octicon octicon-link"></span></a>Advanced</h3>
-
-<pre><code>forcem({
-    class: 'forcem',
-    episode: 4,
-    list: 'characters'
-});
-</code></pre>
-
-<h2>
-<a name="photoshop" class="anchor" href="#photoshop"><span class="octicon octicon-link"></span></a>Photoshop</h2>
-
-<p>Place the <code>.jsx</code> files from <code>/photoshop</code> into your Photoshop scripts folder. Restart Photoshop if it is running.</p>
-
-<p><a name="options"></a></p>
-
-<h1>
-<a name="html-options" class="anchor" href="#html-options"><span class="octicon octicon-link"></span></a>HTML Options</h1>
-
-<table>
-<thead><tr>
-<th>Option</th>
-<th>Description</th>
-<th>Default</th>
-</tr></thead>
-<tbody>
-<tr>
-<td>class</td>
-<td>Main class for forcem elements</td>
-<td>'forcem'</td>
-</tr>
-<tr>
-<td>episode</td>
-<td>Star Wars epsidode #, episodes 4 - 6</td>
-<td>4</td>
-</tr>
-<tr>
-<td>list</td>
-<td>List type: 'characters' or 'planets'</td>
-<td>'planets'</td>
-</tr>
-</tbody>
-</table><p><a name="usage"></a></p>
-
-<h1>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
-
-<h2>
-<a name="html-1" class="anchor" href="#html-1"><span class="octicon octicon-link"></span></a>HTML</h2>
-
-<p>Set elements class to <code>forcem</code>. Use class <code>p-#</code> for paragraphs or <code>li-#</code> for lists where # is the number of paragraphs or list items you want displayed.</p>
-
-<h3>
-<a name="paragraphs" class="anchor" href="#paragraphs"><span class="octicon octicon-link"></span></a>Paragraphs</h3>
-
-<pre><code>&lt;div class="forcem p-5"&gt;&lt;/div&gt;
-</code></pre>
-
-<h3>
-<a name="lists" class="anchor" href="#lists"><span class="octicon octicon-link"></span></a>Lists</h3>
-
-<pre><code>&lt;ul class="forcem li-5"&gt;&lt;/ul&gt;
-</code></pre>
-
-<h3>
-<a name="images" class="anchor" href="#images"><span class="octicon octicon-link"></span></a>Images</h3>
-
-<p>Set <code>w-#</code> and <code>h-#</code> for width and height.</p>
-
-<pre><code>&lt;img class="forcem w-200 h-100"/&gt;
-</code></pre>
-
-<h2>
-<a name="photoshop-1" class="anchor" href="#photoshop-1"><span class="octicon octicon-link"></span></a>Photoshop</h2>
-
-<ul>
-<li>Open document in Photoshop.</li>
-<li>Create New Layer</li>
-<li>Create Text Layer</li>
-<li>Select <code>File -&gt; Script -&gt; Forcemjs Episode *</code> from the menu</li>
-</ul><p><a name="example"></a></p>
-
-<h1>
-<a name="html-example" class="anchor" href="#html-example"><span class="octicon octicon-link"></span></a>HTML Example</h1>
-
-<pre><code>&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;forcem.js&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class="forcem p-6"&gt;&lt;/div&gt;
-    &lt;ul class="forcem li-4"&gt;&lt;/ul&gt;
-    &lt;img class="forcem w-200 h-100"/&gt;
-    &lt;script src="forcem.js" type="text/javascript"&gt;&lt;/script&gt;
-    &lt;script&gt;
-        forcem({
-            class: 'forcem',
-            episode: 4,
-            list: 'planets'
-        });
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/scottyg">scottyg</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-2587159-25");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-  </body>
+	</head>
+	<body>
+		<nav class="noselect">
+			<ul class="nav nav-pills">
+				<li role="presentation" class="toggle-option"><a href="#"><div id="e4" class="sprite episode"></div></a></li>
+				<li role="presentation" class="toggle-option"><a href="#"><div id="e5" class="sprite episode"></div></a></li>
+				<li role="presentation" class="toggle-option"><a href="#"><div id="e6" class="sprite episode"></div></a></li>
+				<li role="presentation" class="toggle-option" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Characters"><a href="#"><div id="characters" class="sprite icon pop"></div></a></li>
+				<li role="presentation" class="toggle-option" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Places"><a href="#"><div id="places" class="sprite icon pop"></div></a></li>
+				<li role="presentation" data-container="body" data-toggle="popover" data-placement="bottom" data-content="How many?"><span><input id="limit" type="number" class='pop'/></span></li>
+				<li role="presentation" class="pull-right hidden-sm hidden-xs" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Copy"><a href="#"><div id="copy" class="sprite icon pop"></div></a></li>
+				<li role="presentation" id="toggle-plain" class="pull-right"><a href="#" class="hidden-sm hidden-xs">Plain Text</a></li>
+				<li role="presentation" id="toggle-html" class="pull-right"><a href="#" class="hidden-sm hidden-xs">HTML</a></li>	
+			</ul>
+		</nav>
+    
+		<section id="body"><div class="container"><div class="row"><div id="ipsum"></div></div></div></section>
+		<hr/>
+		<footer class="noselect">
+			<div class="container">
+				<ul class="nav nav-pills">
+					<li>
+						<a href="https://github.com/scottyg/ForcemJS" target="_blank">Contribute on GitHub</a>
+					</li>
+					<li>
+						<a href="https://www.npmjs.com/package/forcem-ipsum" target="_blank">Install via npm</a>
+					</li>
+					<li class="pull-right">
+						<a href="https://twitter.com/scottygfunk" target="_blank">Made with love by @scottygfunk</a></small>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="scripts/ZeroClipboard.js"></script>
+		<script type="text/javascript" src="scripts/main.js"></script>
+	</body>
 </html>
