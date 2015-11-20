@@ -130,7 +130,7 @@
 		//copy = copy.replace(/<[^>]*>/g, "\n");
 
  	client.on( "ready", function( readyEvent ){
-		alert( "ZeroClipboard SWF is ready!" );
+		//alert( "ZeroClipboard SWF is ready!" );
 		client.on( "copy", function (event) {
 			var clipboard = event.clipboardData;
 			clipboard.setData( "text/plain", copyTmp );
