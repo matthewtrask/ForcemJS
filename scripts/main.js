@@ -72,8 +72,7 @@
 		toggleOption[i].addEventListener('click', toggleOptionFunction, false);
 	}
 	//Change Limit
-	document.querySelector('#limit').addEventListener('input', function()
-	{
+	document.querySelector('#limit').addEventListener('input', function() {
 		if(this.value <= 0 || this.value == null || this.value == '') {
 			this.value = 1;	
 		}
@@ -146,4 +145,4 @@
 		});
 	});
 	
-})();
+});
