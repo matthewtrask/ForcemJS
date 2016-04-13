@@ -49,6 +49,7 @@ body {
           background: transparent;
           color: #fff;
         }
+
         div#e4 {
             background-image: url("../images/e4-hover.png");    
             background-size: cover;
@@ -109,6 +110,7 @@ body {
 //background-image: none, url("../images/sprite.svg#copy-hover"); 
             }
            }
+
         }
       }
       a {
@@ -118,6 +120,7 @@ body {
         color: #999;
         &:hover, &:focus {
           background: transparent;
+
 
             div#e4 { 
                 background-size: cover;
@@ -186,6 +189,7 @@ body {
             background-image: none, url("../images/copy.png");
 //            background-image: none, url("../images/sprite.svg#copy"); }
         }
+
       }
       input {
         margin-top: 7.5px;
