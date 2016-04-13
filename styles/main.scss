@@ -7,7 +7,7 @@ $icon-font-path: '../fonts/';
 body:before {
   display: none;
   // both images are now loaded when the page loads
-  content: url('../images/sprite.svg#e4') url('../images/sprite.svg#e5') url('../images/sprite.svg#e6') url('../images/sprite.svg#e4-hover') url('../images/sprite.svg#e5-hover') url('../images/sprite.svg#e6-hover') url('../images/sprite.svg#characters') url('../images/sprite.svg#characters-hover')  url('../images/sprite.svg#places') url('../images/sprite.svg#places-hover') url('../images/sprite.svg#copy') url('../images/sprite.svg#copy-hover');
+  content: url('../images/e4.png') url('../images/e5.png') url('../images/e6.png') url('../images/e4-hover.png') url('../images/e5-hover.png') url('../images/e6-hover.png') url('../images/characters.png') url('../images/characters-hover.png')  url('../images/places.png') url('../images/places-hover.png') url('../images/copy.png') url('../images/copy-hover.png');
 }
 body {
 //  background-color: #ddd;
@@ -53,27 +53,27 @@ body {
         div#e4 {
             background-image: url("../images/e4-hover.png");    
             background-size: cover;
-            //background-image: none, url("../images/sprite.svg#e4-hover");
+
         }
         div#e5 {
             background-size: cover;
             background-image: url("../images/e5-hover.png");
-//background-image: none, url("../images/sprite.svg#e5-hover"); 
+
         }
         div#e6 {
             background-size: cover;
             background-image: url("../images/e6-hover.png");
-//background-image: none, url("../images/sprite.svg#e6-hover"); 
+
         }
         div#characters { 
             background-size: cover;
             background-image: none, url("../images/characters-hover.png");
-//background-image: none, url("../images/sprite.svg#characters-hover");
+
         }
         div#places { 
             background-size: cover;
             background-image: none, url("../images/places-hover.png");
-//background-image: none, url("../images/sprite.svg#places-hover"); 
+
         }
         &:hover, &:focus {
            a{
@@ -82,32 +82,32 @@ body {
             div#e4 { 
                 background-size: cover;
                 background-image: none, url("../images/e4-hover.png");
-//background-image: none, url("../images/sprite.svg#e4-hover"); 
+
             }
             div#e5 {
                 background-size: cover;
                 background-image: none, url("../images/e5-hover.png");
-//background-image: none, url("../images/sprite.svg#e5-hover"); 
+
             }
             div#e6 { 
                 background-size: cover;
                 background-image: none, url("../images/e6-hover.png");
-                //background-image: none, url("../images/sprite.svg#e6-hover"); 
+
             }
             div#characters { 
                 background-size: cover;
                 background-image: none, url("../images/characters-hover.png");
-//background-image: none, url("../images/sprite.svg#characters-hover"); 
+
             }
             div#places { 
                 background-size: cover;
                 background-image: none, url("../images/places-hover.png");
-//background-image: none, url("../images/sprite.svg#places-hover"); 
+
             }
             div#copy { 
                 background-size: cover;
                 background-image: none, url("../images/copy-hover.png");
-//background-image: none, url("../images/sprite.svg#copy-hover"); 
+
             }
            }
 
@@ -125,69 +125,69 @@ body {
             div#e4 { 
                 background-size: cover;
                 background-image: none, url("../images/e4-hover.png");
-//background-image: none, url("../images/sprite.svg#e4-hover"); 
+
             }
             div#e5 { 
                 background-size: cover;
                 background-image: none, url("../images/e5-hover.png");
-//background-image: none, url("../images/sprite.svg#e5-hover"); 
+
             }
             div#e6 { 
                 background-size: cover;
                 background-image: none, url("../images/e6-hover.png");
-//background-image: none, url("../images/sprite.svg#e6-hover"); 
+
             }
             div#characters {
                 background-size: cover;
                 background-image: none, url("../images/characters-hover.png");
-//background-image: none, url("../images/sprite.svg#characters-hover"); 
+
             }
             div#places { 
                 background-size: cover;
                 background-image: none, url("../images/places-hover.png");
-//background-image: none, url("../images/sprite.svg#places-hover"); 
+
             }
             div#copy { 
                 background-size: cover;
                 background-image: none, url("../images/copy-hover.png");
-//background-image: none, url("../images/sprite.svg#copy-hover"); 
+
             }
         }
 
         div#logo { 
             background-size: cover;
             background-image: none, url("../images/e4.png");
-//            background-image: none, url("../images/sprite.svg#logo"); }
+
         }
         div#e4 { 
             background-size: cover;
             background-image: none, url("../images/e4.png");
-//            background-image: none, url("../images/sprite.svg#e4"); }
+
         }
         div#e5 { 
             background-size: cover;
             background-image: none, url("../images/e5.png");
-//            background-image: none, url("../images/sprite.svg#e5"); }
+
         }
         div#e6 { 
             background-size: cover;
             background-image: none, url("../images/e6.png");
-//            background-image: none, url("../images/sprite.svg#e6"); }
+
         }
         div#characters { 
             background-size: cover;
             background-image: none, url("../images/characters.png");
-//            background-image: none, url("../images/sprite.svg#characters"); }
+
         }
         div#places { 
             background-size: cover;
             background-image: none, url("../images/places.png");
-//            background-image: none, url("../images/sprite.svg#places"); }
+
         }
         div#copy { 
             background-size: cover;
             background-image: none, url("../images/copy.png");
-//            background-image: none, url("../images/sprite.svg#copy"); }
+
         }
 
       }
